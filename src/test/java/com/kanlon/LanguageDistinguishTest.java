@@ -42,4 +42,11 @@ public class LanguageDistinguishTest {
             log.error("这里会抛出空报错！", e);
         }
     }
+
+
+    @Test
+    public void test013(){
+        String lang1 = "nihao";
+        log.info("识别1的文本为：{},结果为：{}", lang1, LanguageDistinguish.getLanguageByString(lang1, DetectMode.PRECISION));
+    }
 }
